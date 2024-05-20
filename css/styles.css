@@ -1,0 +1,12 @@
+.section {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: lightgrey;
+    
+   
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
