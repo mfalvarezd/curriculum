@@ -8,105 +8,46 @@
     <meta name="description" content="Curriclum vitae como desarrollador de software con mi informacion personal">
     <meta name="author" content="Moises Alvarez">
     <title>Currículum Vitae de Moises Alvarez</title>
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- Icono de la pagina-->
+
+    <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
+    <!-- Estilo CSS-->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--- Google font link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+
 </head>
 
 <body>
-    <h1 class="titulo">Currículum Vitae de Moises Alvarez</h1>
-    <nav>
-        <ul>
-            <li><a href="#informacion-personal">Información Personal</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades-tecnicas">Habilidades Técnicas</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-
-
-    </nav>
-    <div class="section" id="informacion-personal">
-        <h2 class="subtitulo">Información Personal</h2>
-        <ul><img src="https://placehold.co/400">
-            <li>Nombre: Moises Alvarez</li>
-            <li>Correo: mfalvare@espol.edu.ec</li>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in fringilla massa, a lobortis lacus.
-                Curabitur vehicula magna id leo facilisis, ac pretium massa ultrices. Morbi sed posuere nibh. Interdum
-                et malesuada fames ac ante ipsum primis in faucibus. Integer posuere, diam id commodo condimentum, nibh
-                urna hendrerit turpis, at suscipit dui dui ac metus. Donec interdum enim malesuada augue convallis
-                finibus. Sed sit amet mollis nunc, blandit convallis erat.</p>
-        </ul>
+    <div class="container">
+        <header class="header"><h1>Moises Alvarez</h1></header>
+        <aside class="left-aside">Left Aside</aside>
+        <main class="main" style="display: flex; flex-direction: column; gap: 15px;">
+            <h3>Main Content</h3>
+            <div id="dimensions"> Width: <span id="width"></span>, Height: <span id="height"></span></div>
+        </main>
+        <section class="banner">Banner</section>
+        <aside class="right-aside">Right Aside</aside>
+        <section class="low-content">Low Content</section>
+        <footer class="footer">Footer</footer>
     </div>
-    <div class="section" id="educacion">
-        <h2 class="subtitulo">Estudios</h2>
-        <ul>
-            <li>Ingenieria en Ciencias de la Computación en ESPOL</li>
-            <p>In ac aliquam eros, vitae accumsan nulla. Mauris a sem non massa ullamcorper viverra et quis sapien.
-                Nam ac ullamcorper nibh. In est magna, porttitor vel luctus ut, volutpat et ligula. Fusce in urna
-                dignissim, laoreet enim id, tempor velit. Nunc pellentesque finibus urna, non tempor libero viverra
-                et. Sed tortor mauris, maximus non purus quis, pellentesque hendrerit purus. Donec mattis dapibus
-                odio sit amet maximus. Proin egestas porta aliquet. Donec lectus massa, sollicitudin vitae leo eu,
-                aliquet sagittis velit. Proin eros ex, lobortis ut consequat eget, efficitur cursus purus. Curabitur
-                rutrum congue auctor. Suspendisse ipsum magna, tempor sit amet nunc ut, maximus condimentum lorem.
-                Etiam aliquam faucibus tortor a lacinia. Suspendisse vitae consequat est, id euismod purus.</p>
 
-        </ul>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2J7xlDH4QkA?si=xCQL90S-tgjVIICl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <script>
+        function updateDimensions() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            document.getElementById('width').textContent = width;
+            document.getElementById('height').textContent = height;
+        }
 
-    </div>
-    <div class="section" id="habilidades-tecnicas">
-        <h2 class="subtitulo">Habilidades Técnicas</h2>
-        <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed odio metus. Praesent ut mi
-                semper, luctus arcu et, elementum purus. Etiam porta, ante eget vestibulum tincidunt, ipsum
-                lacus scelerisque leo, sed tempor metus justo vel turpis. Duis auctor elit nec nunc dignissim
-                pellentesque. Nullam odio dolor, molestie in cursus ac, vehicula vel elit. Nam est neque, cursus
-                pulvinar iaculis fermentum, tincidunt et turpis. Sed sed lacus sed est dictum congue. Curabitur
-                a luctus ante, sed blandit erat. In hac habitasse platea dictumst. Pellentesque faucibus risus
-                nec nibh posuere, dignissim tempor dolor fermentum. Ut ultrices mi eu justo egestas, non lacinia
-                lacus facilisis. Aliquam erat volutpat.</p>
-        </ul>
-
-    </div>
-    <div class="section" id="experiencia">
-        <h2 class="subtitulo">Experiencia</h2>
-        <p>Guayaquil</p>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255168.19938634726!2d-80.14491749229484!3d-2.1524923526324358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13cbe855805f%3A0x8015a492f4fca473!2sGuayaquil!5e0!3m2!1ses-419!2sec!4v1716231387810!5m2!1ses-419!2sec"
-            width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>Aenean lobortis volutpat lacus, id suscipit elit mattis et. Donec urna nisl, faucibus ac leo non,
-            facilisis vestibulum metus. Mauris in dolor eleifend lorem finibus lobortis et vel dui. Mauris
-            suscipit felis eget neque varius rhoncus. Proin sagittis tincidunt cursus. Nullam quis congue
-            ligula. In ex arcu, rutrum at dui vitae, luctus pretium nisi. Vivamus facilisis venenatis neque,
-            eget ornare risus dictum eget. Cras rutrum tellus velit, non blandit tellus dapibus ut. Aenean
-            ac augue augue. Duis ultricies leo eu magna tristique eleifend. Maecenas eget sem sed odio
-            ornare feugiat sit amet ut lectus. Nunc non convallis urna. Morbi sit amet facilisis neque.</p>
-    </div>
-    <div class="section" id="contacto">
-        <h2 class="subtitulo">Contacto</h2>
-        <form id="formulario-contacto">
-            <label for="nombres">Nombre de contacto:</label><input type="text" id="nombres" name="nombres"
-                required="required" /> <br>
-            <label for="correoelectronico">Correo electrónico:</label> <input type="email" id="correoelectronico"
-                name="correoelectronico" required="required" /><br>
-            <label for="mensaje">Mensaje:</label> <textarea id="mensaje" name="mensaje" rows="10"
-                cols="50">Aliquam vel magna sit amet velit dapibus suscipit laoreet nec neque. Quisque placerat sem sit amet odio finibus mattis. Donec sollicitudin eu enim vel cursus. Mauris viverra massa arcu, id pretium tellus tincidunt et. Nulla congue felis non libero placerat, at lacinia ex tincidunt. Quisque dictum facilisis efficitur. Donec in ligula tellus. Vivamus vitae accumsan mi, at venenatis mi. Sed leo sapien, malesuada vitae erat ut, aliquam vulputate nibh. Curabitur id neque quis mi laoreet facilisis. Donec vestibulum nec sem at ornare. Cras eget mi id erat scelerisque tincidunt eu nec lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus sed semper risus, sed interdum sapien. Etiam ultrices dolor a luctus auctor.</textarea><br>
-            <button type="submit" name="enviar">Enviar</button> <button type="reset" name="reiniciar">Cancelar</button>
-        </form>
-
-    </div>
+        window.addEventListener('resize', updateDimensions);
+        document.addEventListener('DOMContentLoaded', updateDimensions);
+    </script>
 
 </body>
 
